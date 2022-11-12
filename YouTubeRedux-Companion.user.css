@@ -1,0 +1,57 @@
+/* ==UserStyle==
+@name           YouTubeRedux Hotfix Collection
+@namespace      youtube.com
+@version        0.0.5
+@description    Collection of fixes to try to make YouTube Redux work properly whenever YouTube rolls out a new "experiment".
+@author         Fuim
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+
+    #cinematics {
+        /* Blur behind video and the background color being misaligned (https://i.imgur.com/8EiMJCV.png) */
+        display: none;
+    }
+
+    /* Description (https://i.imgur.com/RdUzSTT.png)
+  ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata, ytd-watch-metadata[clickable-description][description-collapsed] #description.ytd-watch-metadata:hover {
+      border-radius: 0 !important; 
+      background: #222;
+  }
+  ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata * {
+      border-radius: 0 !important; 
+  }
+  #description .yt-interaction{
+      display: none;
+  }*/
+
+    /* "Show more" button missaligned (https://i.imgur.com/NyesZgb.png)
+  #expand {
+      position: relative !important;
+      left: 0 !important;
+  }
+  */
+    #chips * {
+        border-radius: 0 !important;
+    }
+    /*Fix comment like/dislike button colors*/ /*
+  #dislike-button button[aria-pressed="true"] {
+      filter: brightness(0) invert(22%) sepia(97%) saturate(5448%) hue-rotate(348deg) brightness(80%) contrast(125%);
+  }
+  #like-button button[aria-pressed="true"] {
+      filter: brightness(0) invert(22%) sepia(96%) saturate(4287%) hue-rotate(140deg) brightness(95%) contrast(97%);
+  }
+  */
+    /*videowall round borders (https://i.imgur.com/r9lZqnp.png)*/
+    .ytp-videowall-still-round-medium .ytp-videowall-still-image {
+        border-radius: 0 !important;
+    }
+
+    /* Mini player round borders (https://i.imgur.com/2aUDHIl.png)*/
+    .ytp-player-minimized.ytp-rounded-miniplayer .html5-main-video,
+    .ytp-player-minimized.ytp-rounded-miniplayer .ytp-miniplayer-scrim,
+    .ytp-player-minimized.ytp-rounded-miniplayer.html5-video-player {
+        border-radius: 0 !important;
+    }
+
+}
