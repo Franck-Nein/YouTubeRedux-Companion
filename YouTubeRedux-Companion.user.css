@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name           YouTubeRedux Hotfix Collection
+@name           YouTubeRedux-Companion
 @namespace      youtube.com
-@version        0.0.5
+@version        0.0.6
 @description    Collection of fixes to try to make YouTube Redux work properly whenever YouTube rolls out a new "experiment".
 @author         Fuim
 ==/UserStyle== */
@@ -31,6 +31,8 @@
       left: 0 !important;
   }
   */
+    
+    /*Round tags on recommended videos sidebar (https://i.imgur.com/2KUjqTh.png)*/
     #chips * {
         border-radius: 0 !important;
     }
