@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTubeRedux-Companion
 @namespace      youtube.com
-@version        0.0.6
+@version        0.0.7
 @description    Collection of fixes to try to make YouTube Redux work properly whenever YouTube rolls out a new "experiment".
 @author         Fuim
 ==/UserStyle== */
@@ -54,6 +54,10 @@
     .ytp-player-minimized.ytp-rounded-miniplayer .ytp-miniplayer-scrim,
     .ytp-player-minimized.ytp-rounded-miniplayer.html5-video-player {
         border-radius: 0 !important;
+    }
+
+    #info a[href*="hashtag"] {/* Video Hashtags Background color (https://i.imgur.com/yZOYWwz.png) */
+        background-color: transparent !important;
     }
 
 }
