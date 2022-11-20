@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTubeRedux-Companion
 @namespace      youtube.com
-@version        0.0.8
+@version        0.0.9
 @description    Collection of fixes to try to make YouTube Redux work properly whenever YouTube rolls out a new "experiment".
 @author         Fuim
 ==/UserStyle== */
@@ -66,5 +66,8 @@
     
     #expandable-metadata * {/* Rounded Expandable Metadata on video search results (https://i.imgur.com/yPJVqVq.png) */
     border-radius: 0 !important;
+   }
+    ytd-menu-renderer.ytd-video-primary-info-renderer ytd-segmented-like-dislike-button-renderer ytd-toggle-button-renderer tp-yt-paper-tooltip div:nth-child(1) { /* Gray bar when hovering dislike button (https://i.imgur.com/djnIAfk.png)*/
+    display: none;
    }
 }
